@@ -1,0 +1,23 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+x=np.arange(0,6*3.14168,0.01)
+y1=np.tan(x)
+y2=np.cos(x)
+y3=np.sinh(x)
+y4=np.cosh(x)
+fig, axs = plt.subplots(2,2)
+otro.suptitle('Graficar Funcion')
+axs[0,0].grid()
+axs[0,0].plot(x, y1)
+axs[0,0].set_title('sin(x)')
+axs[0,1].grid()
+axs[0,1].plot(x, y2,'tab:green')
+axs[0,1].set_title('cos(x)')
+axs[1,0].grid()
+axs[1,0].plot(x, y3,'tab:red')
+axs[1,0].set_title('sinh(x)')
+axs[1,1].grid()
+axs[1,1].plot(x, y4,'tab:purple')
+axs[1,1].set_title('cosh(x)')
+plt.show()
